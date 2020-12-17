@@ -15,7 +15,7 @@ require('./config/passport')(passport);
 // --------Database Conf --------
 const db = require('./config/key').MongoURI;
 
-mongoose.connect(process.env.MONGODB_URI||db,{useNewUrlParser : true ,useUnifiedTopology : true , useFindAndModify : false})
+mongoose.connect(db,{useNewUrlParser : true ,useUnifiedTopology : true , useFindAndModify : false})
 .then(() => {
 
 })
