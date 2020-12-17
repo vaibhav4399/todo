@@ -1,0 +1,25 @@
+<%- include("./header") %>
+
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body text-center form-signin">
+      <%- include ("./messages") %>
+      <form class="" action="/auth/login" method="post">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" class="form-control" />
+        </div>
+        <br>
+        <div class="form-group">
+          <button type="submit" class="w-100 btn btn-primary btn-lg">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include("./footer") %>

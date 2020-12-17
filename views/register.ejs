@@ -1,0 +1,33 @@
+<%- include("./header") %>
+
+<div class="row mt-5">
+  <div class="col-md-6 m-auto">
+    <div class="card card-body text-center form-signin">
+      <%- include ("./messages") %>
+      <form class="" action="/auth/register" method="post">
+        <div class="form-group">
+          <label for="Username">Username</label>
+          <input type="text" id="name" name="name" class="form-control" value="<%= typeof name != 'undefined' ? name : '' %>" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" class="form-control" value="<%= typeof email != 'undefined' ? email : '' %>" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input type="number" id="phone" name="phone" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" class="form-control" value="<%= typeof password != 'undefined' ? password : '' %>" />
+        </div>
+        <br>
+        <div class="form-group">
+          <button type="submit" class="w-100 btn btn-primary btn-lg">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include("./footer") %>

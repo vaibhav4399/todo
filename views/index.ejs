@@ -1,0 +1,56 @@
+<!-- <!DOCTYPE html>
+<html>
+
+<head>
+  <title>Home</title>
+  <meta http-equiv="Cache-Control" content="no-store" />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <style>
+    .container {
+      position: relative;
+    }
+
+    .container-child {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      text-align: center;
+      top: 10rem;
+      left: 33rem;
+    }
+
+    .container-child h1 {
+      font-size: 50px;
+    }
+
+    .container-child button {
+      padding: 10px;
+      font-size: 20px;
+      background-color: blue;
+      margin: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .container-child button a {
+      color: antiquewhite;
+      text-decoration: none;
+    }
+  </style>
+
+
+</head>
+
+<body> -->
+<%- include("./header") %>
+<div class="row mt-5">
+  <div class="col-md-6 m-auto ">
+    <div class="card card-body text-center">
+      <h1>HELLO THERE !</h1>
+      <button type="button" name="Signin"><a href="/auth/login">Signin</a></button>
+      <button type="button" name="Signup"><a href="/auth/register">Signup</a></button>
+    </div>
+  </div>
+</div>
+
+<%- include("./footer") %>

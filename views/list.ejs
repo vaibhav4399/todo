@@ -1,0 +1,32 @@
+<%- include("./header") %>
+<div class="row mt-5">
+  <div class="col-md-6 m-auto ">
+    <div class="card card-body text-center ">
+      <form class="" action="/user/<%= id %>/list" method="post">
+        <h1>Hello <%= user %> </h1>
+        <% for(let i=0;i<newitem.length;i++){ %>
+        <p> <%= newitem[i] %></p>
+        <% } %>
+        <div class="form-group">
+          <input type="text" name="work" class="form-control" />
+        </div>
+        <br>
+        <button type="submit" class="w-30 btn btn-primary btn-sm">+</button>
+      </form>
+      <br>
+      <form class="" action="/user/<%= id %>/logout" method="get">
+        <button type="submit" class="w-100 btn btn-primary btn-lg">Logout</button>
+      </form>
+      <br>
+      <form class="" action="/user/<%= id %>/pdf" method="get">
+        <button type="submit" class="w-100 btn btn-primary btn-lg">PDF</button>
+      </form>
+      <br>
+      <form class="" action="/user/<%= id %>/clear" method="get">
+        <button type="submit" class="w-100 btn btn-primary btn-lg">Clear</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<%- include("./footer") %>
